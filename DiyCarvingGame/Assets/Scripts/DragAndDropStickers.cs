@@ -10,7 +10,11 @@ public class DragAndDropStickers : MonoBehaviour
     [SerializeField]
     GameObject placeHolder;
     [SerializeField]
-    Canvas stickers_Canvas;
+    Canvas stickers_Canvas; 
+    [SerializeField]
+    Canvas gamePaly_Canvas;
+    [SerializeField]
+    GameObject knife;
     Vector3 _touchPosition;
     Vector3 _direction;
     Rigidbody _rb;
@@ -45,6 +49,7 @@ public class DragAndDropStickers : MonoBehaviour
                     if (raycastHit.collider.CompareTag("Banana"))
                     {
                         stickers_Canvas.enabled = false;
+                        gamePaly_Canvas.enabled = true;
                         placeHolder.SetActive(true);
                         //transform.position = Input.mousePosition;
                         Debug.Log("Banana clicked");
@@ -66,16 +71,17 @@ public class DragAndDropStickers : MonoBehaviour
                 Vector3 cursorPosition = Camera.main.ScreenToWorldPoint(cursorScreenPoint) + offset;
                 transform.position = cursorPosition;
             }
-            if (transform.position.magnitude - placeHolder.transform.position.magnitude < 300.0f)
+            if (transform.position.magnitude - placeHolder.transform.position.magnitude < 2.0f)
             {
 
                 this.transform.position = placeHolder.transform.position;
+                knife.SetActive(true);
                 placeHolder.SetActive(false);
             }
         }
     }
     private void OnTriggerEnter(Collider other)
     {
-       // gameObject.SetActive(false);
+        // gameObject.SetActive(false);
     }
 }

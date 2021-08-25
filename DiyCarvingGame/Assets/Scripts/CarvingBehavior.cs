@@ -44,40 +44,51 @@ public class CarvingBehavior : MonoBehaviour
 
 
                 SlicedHull cutted = Cut(cuttedObject, material);
-                GameObject upperHull = cutted.CreateUpperHull(cuttedObject, material);
-                upperHull.AddComponent<MeshCollider>();
-                //upperHull.layer = LayerMask.NameToLayer("Cutting");
-                ////upperHull.AddComponent<Rigidbody>();
+                if (cutted != null)
+                {
+                    GameObject upperHull = cutted.CreateUpperHull(cuttedObject, material);
+                    upperHull.AddComponent<MeshCollider>().convex = true;
+                    //upperHull.layer = LayerMask.NameToLayer("Cutting");
+                    //upperHull.AddComponent<Rigidbody>();
 
-                GameObject lowerHull = cutted.CreateLowerHull(cuttedObject, material);
-                lowerHull.AddComponent<MeshCollider>();
-                //lowerHull.layer = LayerMask.NameToLayer("Cutting");
-                ////lowerHull.AddComponent<Rigidbody>();
-                //// Destroy(cuttedObject, 0.02f);
+                    GameObject lowerHull = cutted.CreateLowerHull(cuttedObject, material);
+                    lowerHull.AddComponent<MeshCollider>().convex = true;
+                    //lowerHull.layer = LayerMask.NameToLayer("Cutting");
+                    //lowerHull.AddComponent<Rigidbody>();
+                    //// Destroy(cuttedObject, 0.02f);
 
-                material= upperHull.GetComponent<MeshRenderer>().material;
-                SlicedHull cutt2= Cut(upperHull, material);
-                GameObject upper = cutted.CreateUpperHull(upperHull, material);
-                upper.AddComponent<MeshCollider>().convex=true;
-                upper.layer = LayerMask.NameToLayer("Cutting");
-                upper.AddComponent<Rigidbody>();
+                    //Rigidbody rigidbody;
+                    //RigidbodyConstraints previousConstraints;
+                    material = upperHull.GetComponent<MeshRenderer>().material;
+                    SlicedHull cutt2 = Cut(upperHull, material);
+                    GameObject upper = cutted.CreateUpperHull(upperHull, material);
+                    upper.AddComponent<MeshCollider>().convex = true;
+                    upper.layer = LayerMask.NameToLayer("Cutting");
+                    upper.AddComponent<Rigidbody>();
+                    //rigidbody = upper.GetComponent<Rigidbody>();
+                    //previousConstraints = rigidbody.constraints;
+                    //rigidbody.constraints = RigidbodyConstraints.FreezeAll;
+                   // Destroy(upper, 0.02f);
 
-                material = lowerHull.GetComponent<MeshRenderer>().material;
-                SlicedHull cutt3 = Cut(lowerHull, material);
-                GameObject lower = cutted.CreateLowerHull(lowerHull, material);
-                lower.AddComponent<MeshCollider>().convex = true;
-                lower.layer = LayerMask.NameToLayer("Cutting");
-                lower.AddComponent<Rigidbody>();
-                Destroy(upper, 0.02f);
-                Destroy(lower, 0.02f);
-                //Destroy(upperHull, 0.02f);
-                //Destroy(lowerHull, 0.02f);
+
+                    material = lowerHull.GetComponent<MeshRenderer>().material;
+                    SlicedHull cutt3 = Cut(lowerHull, material);
+                    GameObject lower = cutted.CreateLowerHull(lowerHull, material);
+                    lower.AddComponent<MeshCollider>().convex = true;
+                    lower.layer = LayerMask.NameToLayer("Cutting");
+                    lower.AddComponent<Rigidbody>();
+                    //rigidbody = lower.GetComponent<Rigidbody>();
+                    //rigidbody.constraints = RigidbodyConstraints.FreezePosition;
+                     Destroy(lower, 0.02f);
+                    Destroy(upperHull, 0.02f);
+                    //Destroy(lowerHull, 0.02f);
+                }
             }
         }
     }
 
-        public SlicedHull Cut(GameObject obj, Material crossSectionMaterial = null)
-        {
-            return obj.Slice(transform.position, transform.up, crossSectionMaterial);
-        }
+    public SlicedHull Cut(GameObject obj, Material crossSectionMaterial = null)
+    {
+        return obj.Slice(transform.position, transform.up, crossSectionMaterial);
     }
+}
