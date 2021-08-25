@@ -7,20 +7,7 @@ public class CarvingBehavior : MonoBehaviour
 {
     Material material;
     GameObject cuttedObject;
-    void Start()
-    {
-
-    }
-
-    void Update()
-    {
-
-    }
-    void OnCollisionEnter(Collision collision)
-    {
-        if (collision.collider.tag == "Banana")
-            Debug.Log("Collided");
-    }
+   
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.layer == LayerMask.NameToLayer("Cutting"))

@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class MainMenuManager : MonoBehaviour
 {
-
+ 
     public void StartPaly()
     {
         SceneManager.LoadScene(1);
@@ -14,4 +14,5 @@ public class MainMenuManager : MonoBehaviour
     {
         Application.Quit();
     }
+
 }

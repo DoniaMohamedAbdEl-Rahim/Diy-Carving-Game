@@ -57,7 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\ezy-slice-master\EzySlice\Slicer.cs" />
-    <Compile Include="Assets\Scripts\DragAndDropStickers.cs" />
+    <Compile Include="Assets\Scripts\DragSticker.cs" />
     <Compile Include="Assets\Scripts\CarvingBehavior.cs" />
     <Compile Include="Assets\ezy-slice-master\EzySlice\SlicerExtensions.cs" />
     <Compile Include="Assets\ezy-slice-master\EzySlice\Framework\Triangulator.cs" />
@@ -70,6 +70,11 @@
     <Compile Include="Assets\Scripts\KinfeBehavior.cs" />
     <Compile Include="Assets\ezy-slice-master\EzySlice\Framework\Triangle.cs" />
     <Compile Include="Assets\ezy-slice-master\EzySlice\SlicedHull.cs" />
+    <Compile Include="Assets\Scripts\GamePlayManager.cs" />
+    <Compile Include="Assets\Scripts\ScriptableObjects\Vector3SO.cs" />
+    <Compile Include="Assets\Scripts\ScriptableObjects\GameObjectSO.cs" />
+    <Compile Include="Assets\Scripts\StickerBehavior.cs" />
+    <Compile Include="Assets\Scripts\LastCanvasManager.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
