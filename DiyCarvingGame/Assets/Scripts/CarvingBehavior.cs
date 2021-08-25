@@ -46,10 +46,10 @@ public class CarvingBehavior : MonoBehaviour
                 SlicedHull cutted = Cut(cuttedObject, material);
                 GameObject upperHull = cutted.CreateUpperHull(cuttedObject, material);
                 upperHull.AddComponent<MeshCollider>();
-              // upperHull.layer = LayerMask.NameToLayer("Cutting");
+                //upperHull.layer = LayerMask.NameToLayer("Cutting");
                 ////upperHull.AddComponent<Rigidbody>();
 
-                GameObject lowerHull = cutted.CreateLowerHull(upperHull, material);
+                GameObject lowerHull = cutted.CreateLowerHull(cuttedObject, material);
                 lowerHull.AddComponent<MeshCollider>();
                 //lowerHull.layer = LayerMask.NameToLayer("Cutting");
                 ////lowerHull.AddComponent<Rigidbody>();

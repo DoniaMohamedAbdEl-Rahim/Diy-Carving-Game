@@ -56,20 +56,20 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\MainMenuManager.cs" />
-    <Compile Include="Assets\Scripts\DragAndDropStickers.cs" />
-    <Compile Include="Assets\Scripts\KinfeBehavior.cs" />
-    <Compile Include="Assets\Scripts\CarvingBehavior.cs" />
-    <Compile Include="Assets\ezy-slice-master\EzySlice\Framework\IntersectionResult.cs" />
     <Compile Include="Assets\ezy-slice-master\EzySlice\Slicer.cs" />
-    <Compile Include="Assets\ezy-slice-master\EzySlice\Framework\TextureRegion.cs" />
+    <Compile Include="Assets\Scripts\DragAndDropStickers.cs" />
+    <Compile Include="Assets\Scripts\CarvingBehavior.cs" />
     <Compile Include="Assets\ezy-slice-master\EzySlice\SlicerExtensions.cs" />
     <Compile Include="Assets\ezy-slice-master\EzySlice\Framework\Triangulator.cs" />
-    <Compile Include="Assets\ezy-slice-master\EzySlice\SlicedHull.cs" />
-    <Compile Include="Assets\ezy-slice-master\EzySlice\Framework\Intersector.cs" />
     <Compile Include="Assets\ezy-slice-master\EzySlice\Framework\Plane.cs" />
+    <Compile Include="Assets\Scripts\MainMenuManager.cs" />
     <Compile Include="Assets\ezy-slice-master\EzySlice\Framework\Line.cs" />
+    <Compile Include="Assets\ezy-slice-master\EzySlice\Framework\Intersector.cs" />
+    <Compile Include="Assets\ezy-slice-master\EzySlice\Framework\TextureRegion.cs" />
+    <Compile Include="Assets\ezy-slice-master\EzySlice\Framework\IntersectionResult.cs" />
+    <Compile Include="Assets\Scripts\KinfeBehavior.cs" />
     <Compile Include="Assets\ezy-slice-master\EzySlice\Framework\Triangle.cs" />
+    <Compile Include="Assets\ezy-slice-master\EzySlice\SlicedHull.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
