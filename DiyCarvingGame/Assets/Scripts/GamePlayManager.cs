@@ -11,7 +11,7 @@ public class GamePlayManager : MonoBehaviour
     Canvas lastCanvas;
     [SerializeField]
     GameObject knife;
-  
+   
     public void Back_Clicked()
     {
         Debug.Log("Clicked");
@@ -23,7 +23,6 @@ public class GamePlayManager : MonoBehaviour
     }
     public void Done()
     {
-        Debug.Log("Done");
         gamePlayCanvas.gameObject.SetActive(false);
         lastCanvas.gameObject.SetActive(true);
     }

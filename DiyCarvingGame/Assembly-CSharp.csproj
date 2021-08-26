@@ -57,8 +57,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\ezy-slice-master\EzySlice\Slicer.cs" />
-    <Compile Include="Assets\Scripts\DragSticker.cs" />
-    <Compile Include="Assets\Scripts\CarvingBehavior.cs" />
+    <Compile Include="Assets\Scripts\GamePlay\DragSticker.cs" />
+    <Compile Include="Assets\Scripts\GamePlay\CarvingBehavior.cs" />
     <Compile Include="Assets\ezy-slice-master\EzySlice\SlicerExtensions.cs" />
     <Compile Include="Assets\ezy-slice-master\EzySlice\Framework\Triangulator.cs" />
     <Compile Include="Assets\ezy-slice-master\EzySlice\Framework\Plane.cs" />
@@ -67,15 +67,18 @@
     <Compile Include="Assets\ezy-slice-master\EzySlice\Framework\Intersector.cs" />
     <Compile Include="Assets\ezy-slice-master\EzySlice\Framework\TextureRegion.cs" />
     <Compile Include="Assets\ezy-slice-master\EzySlice\Framework\IntersectionResult.cs" />
-    <Compile Include="Assets\Scripts\KinfeBehavior.cs" />
+    <Compile Include="Assets\Scripts\GamePlay\KinfeBehavior.cs" />
     <Compile Include="Assets\ezy-slice-master\EzySlice\Framework\Triangle.cs" />
     <Compile Include="Assets\ezy-slice-master\EzySlice\SlicedHull.cs" />
     <Compile Include="Assets\Scripts\GamePlayManager.cs" />
     <Compile Include="Assets\Scripts\ScriptableObjects\Vector3SO.cs" />
     <Compile Include="Assets\Scripts\ScriptableObjects\GameObjectSO.cs" />
-    <Compile Include="Assets\Scripts\StickerBehavior.cs" />
+    <Compile Include="Assets\Scripts\GamePlay\StickerBehavior.cs" />
     <Compile Include="Assets\Scripts\LastCanvasManager.cs" />
     <Compile Include="Assets\Scripts\ScriptableObjects\intSO.cs" />
+    <Compile Include="Assets\Scripts\Classes\Sound.cs" />
+    <Compile Include="Assets\Scripts\AudioManager.cs" />
+    <Compile Include="Assets\Scripts\AudioController.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
