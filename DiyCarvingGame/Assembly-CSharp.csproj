@@ -79,11 +79,6 @@
     <Compile Include="Assets\Scripts\Classes\Sound.cs" />
     <Compile Include="Assets\Scripts\AudioManager.cs" />
     <Compile Include="Assets\Scripts\AudioController.cs" />
-    <Compile Include="Assets\Scripts\New Folder\Lighsaber.cs" />
-    <Compile Include="Assets\Scripts\New Folder\Sliceable.cs" />
-    <Compile Include="Assets\Scripts\New Folder\Slicer.cs" />
-    <Compile Include="Assets\Scripts\New Folder\SlicesMetadata.cs" />
-    <Compile Include="Assets\Scripts\New Folder\Capsule.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
