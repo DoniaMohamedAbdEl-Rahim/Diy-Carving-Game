@@ -23,6 +23,7 @@ public class GamePlayManager : MonoBehaviour
     }
     public void Done()
     {
+        Debug.Log("Done");
         gamePlayCanvas.gameObject.SetActive(false);
         lastCanvas.gameObject.SetActive(true);
     }

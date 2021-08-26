@@ -7,7 +7,14 @@ public class CarvingBehavior : MonoBehaviour
 {
     Material material;
     GameObject cuttedObject;
-   
+    [SerializeField]
+    intSO carvingTimes;
+    [SerializeField]
+    GamePlayManager gamePlayManager;
+    private void Start()
+    {
+        carvingTimes.value = 0;
+    }
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.layer == LayerMask.NameToLayer("Cutting"))
@@ -69,6 +76,8 @@ public class CarvingBehavior : MonoBehaviour
                      Destroy(lower, 0.02f);
                     Destroy(upperHull, 0.02f);
                     //Destroy(lowerHull, 0.02f);
+
+                    carvingTimes.value++;
                 }
             }
         }

@@ -33,7 +33,7 @@ public class DragSticker : MonoBehaviour
                             if (stickers[i].tag == raycastHit.collider.gameObject.tag)
                             {
                                 stickerIndex.value = i;
-                                Debug.Log($"Selected sticker indx = {i}");
+                               // Debug.Log($"Selected sticker indx = {i}");
                                 break;
                             }
                         }
