@@ -24,6 +24,7 @@ public class LastCanvasManager : MonoBehaviour
     Sprite star;
     [SerializeField]
     Slider slider;
+  
     void Start()
     {
         originalSticker_img.sprite = stickersSprites[stickerIndex.value];

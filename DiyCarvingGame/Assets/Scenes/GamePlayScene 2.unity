@@ -463,6 +463,7 @@ MonoBehaviour:
   gamePlayCanvas: {fileID: 526937866}
   lastCanvas: {fileID: 988121076}
   knife: {fileID: 1899630075}
+  finalGameObject: {fileID: 11400000, guid: c66c940a9e26f9c47bb51e958919dfef, type: 2}
 --- !u!1 &552413732
 GameObject:
   m_ObjectHideFlags: 0
@@ -638,7 +639,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   placeHolder: {fileID: 1762593360}
   knife: {fileID: 1899630075}
-  _moveSpeed: 0.01
   audioManager: {fileID: 1364204321}
 --- !u!136 &653050109
 CapsuleCollider:
@@ -3279,6 +3279,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   carvingTimes: {fileID: 11400000, guid: b8a61a42a88e19843bf404fc1ddadd41, type: 2}
   audioManager: {fileID: 1364204321}
+  finalGameObject: {fileID: 11400000, guid: c66c940a9e26f9c47bb51e958919dfef, type: 2}
 --- !u!1 &2011269183
 GameObject:
   m_ObjectHideFlags: 0
