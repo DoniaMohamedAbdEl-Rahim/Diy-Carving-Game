@@ -75,6 +75,7 @@
     <Compile Include="Assets\Scripts\ScriptableObjects\GameObjectSO.cs" />
     <Compile Include="Assets\Scripts\StickerBehavior.cs" />
     <Compile Include="Assets\Scripts\LastCanvasManager.cs" />
+    <Compile Include="Assets\Scripts\ScriptableObjects\intSO.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

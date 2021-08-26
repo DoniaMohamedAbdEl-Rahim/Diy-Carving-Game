@@ -355,6 +355,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cdfa7a0e6f7e734da4540b9b584e107, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stickersSprites:
+  - {fileID: 21300000, guid: b60d53e8170a7ad4f9564f876444f8b8, type: 3}
+  stickers:
+  - {fileID: 653050107}
+  stickerIndex: {fileID: 11400000, guid: ed7c576c5bacca8418382e73c46c28c9, type: 2}
 --- !u!136 &653050109
 CapsuleCollider:
   m_ObjectHideFlags: 0
