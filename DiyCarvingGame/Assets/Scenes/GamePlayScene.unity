@@ -278,7 +278,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 461f0170c82b53340a9812199b63bbd4, type: 3}
       propertyPath: m_TagString
-      value: Banana
+      value: Sticker
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 461f0170c82b53340a9812199b63bbd4, type: 3}
       propertyPath: m_RootOrder
